@@ -143,7 +143,7 @@ struct ContentView: View {
         //Loop through all elements of firstColumn & compare first letters
         for i in 0 ..< firstColumn.count{
             if firstColumn[i].first?.uppercased() == firstLetter.uppercased(){
-                firstColumnIndex = i == 0 ? 25 : i-1
+                firstColumnIndex = i == 0 ? 25 : i
             }
         }
         return "\(firstColumn[firstColumnIndex]) \(secondColumn.randomElement()!)"
